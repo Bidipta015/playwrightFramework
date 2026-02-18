@@ -23,8 +23,8 @@ playwright-report/**
 # Editor / OS
 .DS_Store
 
-# Lockfiles (do not push local lockfile)
-package-lock.json
+# Lockfiles
+# package-lock.json
 
 # Specific runtime artifacts to ignore explicitly
 test-results/.last-run.json
