@@ -5,3 +5,21 @@ artifacts/
 .env
 .vscode/
 report/
+
+# Playwright / test artifacts (generated at runtime)
+test-results/
+playwright-report/
+test-results/**
+playwright-report/**
+# screenshots, videos, traces
+**/test-failed-*.png
+**/*.webm
+**/*.png
+**/trace/**
+**/videos/**
+# local browser and cache
+.cache/
+
+# Editor / OS
+.DS_Store
+
