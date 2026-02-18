@@ -1,0 +1,7 @@
+node_modules/
+dist/
+.playwright/
+artifacts/
+.env
+.vscode/
+report/

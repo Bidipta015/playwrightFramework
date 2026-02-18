@@ -1,0 +1,26 @@
+{
+  "name": "playwright-framework",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "test": "playwright test",
+    "test:headed": "playwright test --headed",
+    "test:debug": "PWDEBUG=1 playwright test",
+    "health": "playwright test src/tests/site-health.bdd.spec.ts",
+    "health:all": "playwright test src/tests/*.bdd.spec.ts",
+    "health:events": "playwright test src/tests/events.bdd.spec.ts",
+    "health:survey": "playwright test src/tests/survey.bdd.spec.ts",
+    "health:calculator": "playwright test src/tests/calculator.bdd.spec.ts",
+    "run-checks": "node ./scripts/run-checks.js",
+    "lint": "eslint . --ext .ts",
+    "format": "prettier --write .",
+    "typecheck": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.40.0",
+    "eslint": "^8.0.0",
+    "eslint-config-prettier": "^8.0.0",
+    "prettier": "^2.0.0",
+    "typescript": "^5.0.0"
+  }
+}
